@@ -1,7 +1,7 @@
 $(()=>{
     $("#start-quiz").click(function(){
         let count = 0;
-        $.get("http://localhost:3000/questions", (statements)=>{
+        $.get("/questions", (statements)=>{
             $("#container").html(`<h4 class="display-4">Answer These Questions</h1><br><form id ="question-form" action="/answers" method="post" ><ol id="questions" class="text-left"><ol></form>`);
             statements.forEach(statement =>{
                 $("#questions").append(`<li>${makeHTMLQuestion(statement,count++)}</li>`);
@@ -13,7 +13,7 @@ $(()=>{
     });
 
     $("#retake-quiz").click(function () {
-       window.location="http://localhost:3000";
+       window.location="/";
 
     });
 
