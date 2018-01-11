@@ -89,6 +89,6 @@ app.post("/answers", function(request, response){
 });
 
 
-var server = app.listen(3000, () => {
+var server = app.listen(process.env.port, () => {
     console.log("Server is listening at " + server.address().port + " using " + server.address().family + "\n");
 });
