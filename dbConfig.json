@@ -1,6 +1,6 @@
 {
-    "host": "nodemysql.mysql.database.azure.com",
-    "user": "m_hassaan_@nodemysql",
-    "password": "IloveMysql786",
+    "host": "locahlhost",
+    "user": "root",
+    "password": "",
     "database": "quiz"
 }
